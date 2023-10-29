@@ -1,0 +1,126 @@
+{% extends "App/home.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .customer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="customer-container">
+        <div class="card">
+            <h2>Customer</h2>
+            <div class="row">
+                <!-- Add customer information here -->
+            </div>
+            <div class="buttons">
+                <button class="button">Update Customer</button>
+                <button class="button">Delete Customer</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Contact Information</h2>
+            <div class="row">
+                <p>Email: <!-- Add email here --></p>
+            </div>
+            <div class="row">
+                <p>Phone: <!-- Add phone here --></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Total Orders</h2>
+            <!-- Add total orders information here -->
+        </div>
+    </div>
+
+    <button>Search</button>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Date Ordered</th>
+                <th>Status</th>
+                <th>Update</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Fill in the table rows with product information as needed -->
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
+{% endblock %}
